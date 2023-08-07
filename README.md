@@ -22,7 +22,7 @@ To create the Akamai GTM domain:
 To create a failover property
 - In failover.tf Line 5, add name of the property.
 To create a Weighted load balance property
-- In wlb_property.tf Line 3, add name of the WLB property after .
+- In wlb_property.tf Line 3, add name of the WLB property after the section is uncommented.
 
 Other settings can be changed if required.
 
