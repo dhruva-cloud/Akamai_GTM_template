@@ -17,14 +17,13 @@ akamai property-manager list-groups --section default
 
 5) Add your values to variables in side of the variables.tf file.
 
-To create the Akamai GTM configuration:
-- In variables.tf Line 14, add your hostname that you want to Akamaize.
-- Line 15, add your Akamai Edge Hostname that you want to create. Recommended is yourhostname.edgesuite.net for Standard TLS and yourhostname.edgekey.net for Enhanced TLS.
-- Line 16, add your Origin Hostname where Akamai can retrieve your static/dynamic content. Can also be an IP address.
-- Line 18, add your CP Code name. Recommended is to use your hostname here as well.
-- Line 24, add your Akamai network to deploy the configuration to. Recommend is to start with Akamai STAGING.
-- Line 25, add your email to receive notifications regarding the activation.
+To create the Akamai GTM domain:
+- In variables.tf Line 25, add your GTM domain name ending with akadns.net.
+To create a failover property
+- In failover.tf Line 5, add name of the property.
+To create a Weighted load balance property
+- In wlb_property.tf Line 3, add name of the WLB property after .
 
 Other settings can be changed if required.
 
-Following these steps should create your Akamai Ion configuration as well as activate the network lists, CP Code and Edge Hostname that you have specified.
+Following these steps should create your Akamai GTM configuration with zero or more properties.
