@@ -26,4 +26,4 @@ To create a Weighted load balance property
 
 Other settings can be changed if required.
 
-Following these steps should create your Akamai GTM configuration with zero or more properties.
+Following these steps should create your Akamai GTM configuration with zero or more properties
